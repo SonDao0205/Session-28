@@ -29,8 +29,18 @@ do {
                 searchID = +prompt("Nhap ID")
                 index = employees.findIndex(element => element.id === searchID);
                 if (index !== -1) { 
-                    employees.splice(index, 1);
-                    console.log(`Da xoa nhan vien thanh cong`);
+                    let choice = +prompt("Ban co chac chan muon xoa nhan vien nay khong?  [1 = Yes / 0 = No]")
+                    switch (choice) {
+                        case 1:
+                            employees.splice(index, 1);
+                            console.log(`Da xoa nhan vien thanh cong`);
+                            break;
+                        case 2:
+                            break;
+                        default:
+                            console.log(`Lua chon khong hop le`);
+                            break;
+                    }
                 } else {
                     console.log(`Khong tim thay nhan vien`);
                 }
