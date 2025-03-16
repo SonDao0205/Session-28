@@ -6,4 +6,7 @@ const car = {
 
 car.color = "Red"
 car.year = 2022
-console.log(car);
+console.log(car.brand);
+console.log(car.model);
+console.log(car.year);
+console.log(car.color);

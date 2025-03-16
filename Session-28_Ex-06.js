@@ -7,6 +7,8 @@ const cart = [
     { name: "Bánh bao", price: 15000, quantity: 3 }
 
 ];
+let sum = 0
 for (const product of cart) {
-    console.log(`Ten san pham :`,product.name,` - Tong tien :`,product.price * product.quantity);
+    sum += product.price * product.quantity
 }
+console.log(`Tong tien trong gio hang : `,sum);

@@ -5,4 +5,6 @@ const book = {
 }
 
 delete book.page
-console.log(book);
+console.log(book.title);
+console.log(book.author);
+

@@ -3,4 +3,6 @@ const person = {
     age : 25,
     job : "Developer",
 }
-console.log(person);
+console.log(`Ten : `,person.fullName);
+console.log(`Tuoi : `,person.age);
+console.log(`Cong viec : `,person.job);
