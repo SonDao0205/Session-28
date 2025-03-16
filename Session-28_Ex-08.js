@@ -16,10 +16,12 @@ do {
             case 1:
                 let id = +prompt("Nhap ID:");
                 let name = prompt("Nhap ten:");
+                let position = prompt("Nhap vi tri")
                 let salary = +prompt("Nhap muc luong:");
                 let newEmploy = {
                     id: id,
                     name: name,
+                    position : position,
                     salary: salary
                 };
                 employees.push(newEmploy);
